@@ -1,0 +1,18 @@
+Procédure interne PR-032 - Matériel informatique et sécurité des postes
+
+Chaque salarié dispose d'un poste de travail nommé et attribué. Le prêt de
+poste entre collègues est interdit, y compris temporairement.
+
+Le chiffrement du disque est activé par défaut et ne doit pas être désactivé.
+Le verrouillage automatique de session intervient après cinq minutes
+d'inactivité.
+
+L'installation de logiciels tiers est soumise à validation préalable de
+l'équipe sécurité. Une liste de logiciels pré-approuvés est maintenue et
+consultable sur l'intranet.
+
+En cas de perte ou de vol, la déclaration doit être faite dans les
+deux heures à l'équipe sécurité, qui déclenche l'effacement à distance.
+
+Les clés d'API et les secrets ne sont jamais stockés en clair sur le poste.
+L'usage du gestionnaire de secrets interne est obligatoire.

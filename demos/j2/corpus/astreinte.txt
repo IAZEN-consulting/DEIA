@@ -1,0 +1,18 @@
+Procédure interne PR-045 - Astreinte technique
+
+L'astreinte couvre les nuits de 20h à 8h ainsi que les week-ends et jours
+fériés, par rotation hebdomadaire au sein de l'équipe technique.
+
+Un salarié ne peut pas être d'astreinte plus d'une semaine sur quatre. Une
+semaine d'astreinte n'est jamais accolée à une semaine de congés.
+
+La compensation est de 150 euros par semaine d'astreinte, à laquelle
+s'ajoute la rémunération des interventions effectives au taux horaire
+majoré de 50 pour cent.
+
+Le délai de prise en compte attendu après déclenchement d'une alerte est de
+quinze minutes. Le délai de première réponse documentée est de trente
+minutes.
+
+Toute intervention de nuit supérieure à deux heures ouvre droit à un repos
+compensateur équivalent le jour ouvré suivant.

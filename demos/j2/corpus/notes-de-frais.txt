@@ -1,0 +1,19 @@
+Procédure interne PR-021 - Notes de frais
+
+Les notes de frais sont déposées dans l'outil interne avant le 5 du mois
+suivant la dépense. Toute note déposée après cette date est reportée sur le
+mois suivant, sans exception.
+
+Les justificatifs sont obligatoires dès le premier euro. Un justificatif
+illisible entraîne le rejet de la ligne concernée, sans rejet de la note
+complète.
+
+Plafonds applicables :
+- Repas en déplacement : 25 euros par repas
+- Nuitée en province : 110 euros
+- Nuitée à Paris et en petite couronne : 160 euros
+- Trajet en voiture personnelle : barème kilométrique fiscal en vigueur
+
+Le remboursement intervient avec la paie du mois suivant la validation. Un
+dépassement de plafond doit être justifié par écrit et validé avant la
+dépense, jamais après.

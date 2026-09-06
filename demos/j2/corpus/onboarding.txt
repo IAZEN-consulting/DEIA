@@ -1,0 +1,18 @@
+Procédure interne PR-003 - Accueil d'un nouvel arrivant
+
+Le parcours d'intégration se déroule sur les quatre premières semaines.
+
+Semaine 1 : remise du matériel, ouverture des accès, présentation des
+équipes, lecture des procédures internes obligatoires. Un référent est
+désigné pour toute la durée du parcours.
+
+Semaine 2 : prise en main de l'environnement technique. Le nouvel arrivant
+livre en production une modification mineure, accompagné de son référent.
+Cette première mise en production fait partie du parcours et n'est pas
+optionnelle.
+
+Semaines 3 et 4 : autonomie progressive sur les tâches courantes, avec un
+point hebdomadaire avec le responsable d'équipe.
+
+Un entretien de fin de période d'intégration est organisé à la sixième
+semaine. Il porte sur l'adéquation du poste et non sur la performance.
