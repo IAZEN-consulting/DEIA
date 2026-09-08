@@ -1,0 +1,66 @@
+<div class="profil-card">
+    <div class="profil-header">
+        <img src="profile-pic.jpg" alt="Photo de profil" class="profil-pic">
+        <h2 class="profil-nom">Nom de l'utilisateur</h2>
+        <p class="profil-titre">Titre du poste</p>
+    </div>
+    <div class="profil-bio">
+        <p>Une courte biographie de l'utilisateur qui décrit ses intérêts et ses compétences.</p>
+    </div>
+    <div class="profil-footer">
+        <button class="profil-button">Contacter</button>
+        <button class="profil-button">Suivre</button>
+    </div>
+</div>
+<style>
+    .profil-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 300px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .profil-header {
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 16px;
+    }
+    .profil-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .profil-nom {
+        margin: 8px 0 4px;
+        font-size: 20px;
+    }
+    .profil-titre {
+        margin: 0;
+        color: #777;
+    }
+    .profil-bio {
+        padding: 16px;
+        font-size: 14px;
+        color: #333;
+    }
+    .profil-footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #f4f4f4;
+    }
+    .profil-button {
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .profil-button:hover {
+        background-color: #0056b3;
+    }
+</style>
