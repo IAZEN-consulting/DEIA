@@ -12,13 +12,13 @@ diffèrent que par le ton, les appels 1 et 3 que par le produit. Voir README.md.
 
 import json
 import os
+from pathlib import Path
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
-# OpenRouter expose une API compatible OpenAI : même client, autre base_url.
-BASE_URL = "https://openrouter.ai/api/v1"
-MODELE = "minimax/minimax-m3:free"
+# Aucune base_url : le client vise api.openai.com par défaut.
+MODELE = "gpt-4.1-nano-2025-04-14"
 GABARIT = (
     "Rédige une description commerciale de deux phrases pour ce produit.\n"
     "Ton : {ton}.\nProduit : {nom}\nCaractéristiques : {caracteristiques}"
@@ -40,19 +40,19 @@ JEUX = [
         "caracteristiques": "350 lumens, autonomie 40 heures, 78 grammes",
     },
 ]
-ENV = os.path.join(os.path.dirname(__file__), "..", "..", ".env")
+ENV = Path(__file__).resolve().parents[4] / ".env"
 SORTIE = os.path.join(os.path.dirname(__file__), "sortie-enregistree.json")
 
 
 def cle():
-    """Clé lue dans l'environnement, sinon dans demos/.env."""
-    valeur = os.environ.get("OPENROUTER_API_KEY")
-    if not valeur and os.path.exists(ENV):
-        for ligne in open(ENV, encoding="utf-8"):
-            if ligne.startswith("OPENROUTER_API_KEY="):
+    """Clé lue dans l'environnement, sinon dans le .env à la racine du projet."""
+    valeur = os.environ.get("OPENAI_API_KEY")
+    if not valeur and ENV.exists():
+        for ligne in ENV.read_text(encoding="utf-8").splitlines():
+            if ligne.startswith("OPENAI_API_KEY="):
                 valeur = ligne.split("=", 1)[1].strip().strip("\"'")
     if not valeur:
-        raise SystemExit("OPENROUTER_API_KEY absente : la définir dans demos/.env")
+        raise SystemExit("OPENAI_API_KEY absente : la définir dans le .env à la racine")
     return valeur
 
 
@@ -66,7 +66,7 @@ print(GABARIT)
 # Le gabarit et le modèle sont assemblés une fois : c'est la chaîne. Seuls
 # les paramètres changent ensuite, jamais le texte du prompt.
 chaine = ChatPromptTemplate.from_template(GABARIT) | ChatOpenAI(
-    model=MODELE, temperature=0, api_key=cle(), base_url=BASE_URL
+    model=MODELE, temperature=0, api_key=cle()
 )
 
 resultats = []

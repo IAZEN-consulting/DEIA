@@ -1,0 +1,28 @@
+{
+  "resultats": [
+    {
+      "parametres": {
+        "nom": "Sac à dos Trek 30L",
+        "ton": "sobre et factuel",
+        "caracteristiques": "imperméable, 30 litres, 900 grammes"
+      },
+      "reponse": "Le sac à dos Trek 30L offre une capacité de 30 litres, idéal pour vos randonnées et activités outdoor. Léger de seulement 900 grammes, il est également imperméable pour protéger vos affaires en toutes conditions."
+    },
+    {
+      "parametres": {
+        "nom": "Sac à dos Trek 30L",
+        "ton": "enthousiaste",
+        "caracteristiques": "imperméable, 30 litres, 900 grammes"
+      },
+      "reponse": " Découvrez le sac à dos Trek 30L, l'allié parfait pour toutes vos aventures grâce à sa conception imperméable qui protège vos affaires même sous la pluie ! Léger avec seulement 900 grammes, il allie confort et praticité pour vous accompagner partout avec style et fiabilité."
+    },
+    {
+      "parametres": {
+        "nom": "Lampe frontale Nyx",
+        "ton": "sobre et factuel",
+        "caracteristiques": "350 lumens, autonomie 40 heures, 78 grammes"
+      },
+      "reponse": "La lampe frontale Nyx offre une puissance de 350 lumens pour une visibilité optimale. Avec une autonomie de 40 heures et un poids de seulement 78 grammes, elle allie performance et confort pour une utilisation prolongée."
+    }
+  ]
+}

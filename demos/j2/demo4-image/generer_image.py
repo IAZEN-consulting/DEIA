@@ -18,14 +18,9 @@ SORTIES = os.path.join(os.path.dirname(__file__), "sorties")
 MODELE = "gpt-image-1-mini"
 ENV = Path(__file__).resolve().parents[3] / ".env"
 PROMPTS = [
-    ("1-prompt-court.png", "Un poste de travail de developpeur."),
     (
-        "2-prompt-detaille.png",
-        "Un poste de travail de developpeur photographie de trois quarts, "
-        "lumiere naturelle rasante de fin de journee venant d'une fenetre a "
-        "gauche, palette sobre en bois clair et gris ardoise, un seul ecran "
-        "allume affichant du code, bureau range, faible profondeur de champ, "
-        "style photographie editoriale, format paysage.",
+        "1-prompt-detaille.png",
+        "Photographie éditoriale réaliste d'un développeur d'environ 28 ans, attentif, codant sur un ordinateur portable avec un second écran affichant des workflows d'intégration d'IA, assis dans une salle de formation tech moderne et lumineuse. En arrière-plan flou, un formateur présente des schémas techniques sur un grand écran interactif. Plan moyen, objectif 50mm, f/2.2, faible profondeur de champ, lumière naturelle douce complétée par la lueur subtile des écrans, couleurs neutres et modernes. Rendu très détaillé, textures naturelles de peau et de tissu, ambiance professionnelle et crédible. Sans hologrammes futuristes, sans néons criards, sans déformations des mains ni sourires artificiels de banque d'images.",
     ),
 ]
 

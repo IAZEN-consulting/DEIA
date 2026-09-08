@@ -1,0 +1,27 @@
+name: Rapport de dependances
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Dependances obsoletes
+        run: uv lock --upgrade --dry-run > rapport.txt || true
+
+      - name: Ouvrir une issue
+        run: gh issue create --title "Dependances - $(date +%F)" --body-file rapport.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
