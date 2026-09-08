@@ -21,7 +21,7 @@ from langchain_openai import ChatOpenAI
 MODELE = "gpt-4.1-nano-2025-04-14"
 GABARIT = (
     "Rédige une description commerciale de deux phrases pour ce produit.\n"
-    "Ton : {ton}.\nProduit : {nom}\nCaractéristiques : {caracteristiques}"
+    "Ton : {ton}.\nProduit : {nom}\nCaractiristiques : {caracteristiques}"
 )
 JEUX = [
     {
@@ -72,6 +72,7 @@ chaine = ChatPromptTemplate.from_template(GABARIT) | ChatOpenAI(
 resultats = []
 for numero, jeu in enumerate(JEUX, 1):
     reponse = chaine.invoke(jeu).content
+
     resultats.append({"parametres": jeu, "reponse": reponse})
     bloc("Appel %d : %s, ton %s" % (numero, jeu["nom"], jeu["ton"]))
     print("  " + reponse.replace("\n", "\n  "))

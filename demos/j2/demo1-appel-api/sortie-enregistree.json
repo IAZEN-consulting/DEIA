@@ -1,0 +1,45 @@
+{
+  "id": "chatcmpl-ELl4IrQxsITh3xx7420b7jKUT0eqz",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "Une fenêtre de contexte est une portion de texte ou de données entourant un élément cible, utilisée pour fournir un contexte supplémentaire lors du traitement ou de l'analyse. Elle permet à un modèle ou à un algorithme de mieux comprendre la signification ou la relation de cet élément dans son environnement. En NLP, par exemple, elle aide à saisir le sens d'un mot en tenant compte des mots environnants.",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": [],
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1788854526,
+  "model": "gpt-4.1-nano-2025-04-14",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": "fp_e11031027d",
+  "usage": {
+    "completion_tokens": 82,
+    "prompt_tokens": 34,
+    "total_tokens": 116,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}
